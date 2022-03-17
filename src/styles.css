@@ -5,10 +5,7 @@
     --color-accent: rgb(169, 232, 252);
     --color-alternative: rgb(245, 245, 245);
 }
-/*
-* {
-    box-sizing: border-box;
-}*/
+
 
 /* All Pages */
 /* Typography */
@@ -47,7 +44,7 @@ time {
 .radius {
     border-radius: 5px;
 }
-/* Links */
+/* Links All Pages*/
 a {
     text-decoration: none;
     color: var(--color-alternative);
@@ -59,7 +56,7 @@ a:visited {
 
 /* Media queries */
 /* Home Page and default*/
-@media screen and (min-width: 1024px){ /*  center home photo surface pro, ipad mini/air,  */
+@media screen and (min-width: 1024px){ 
     body {
         font-size: 1.8rem;
     }
@@ -86,8 +83,6 @@ a:visited {
     }
     /* Grid */
     .container {
-        /* height: 400vh;  why this no work?
-        margin-top: 6rem */
         margin: 0 2rem 0 2rem;
     }
     .container .box-blurb {
@@ -103,10 +98,10 @@ a:visited {
     }
     /* Portfolio Page */
     #portfolio {
-        margin: 0 1rem 0 1rem; /* this is not needed? */
+        margin: 0 1rem 0 1rem;
     }
     /* About Page */
-    #about {  /*clean all this up */
+    #about {
         height: 20vh;
         margin: 0 20rem 0 20rem;
     }
@@ -139,7 +134,7 @@ a:visited {
 
 
 /* MAIN CSS and Default */ 
-/* Navbar All*/
+/* Navbar All pages*/
 .list {
     padding: 0px;
     text-align: center;
@@ -160,7 +155,7 @@ a:visited {
 .nav_item > a {
     color: var(--color-primary);
 }
-/* Header All*/
+/* Header All pages*/
 .header {
     text-align: center;
 }
@@ -199,11 +194,11 @@ a:visited {
 
 /* About Page */
 /* Grid */
-#about {  /* set media quries*/
+#about {
     display: grid;
     grid-template: 25rem auto / 40fr 60fr;
     gap: 10px;
-    height: 200vh;              /* adjust when finished */ 
+    height: 200vh;
     margin-top: 4rem;
     margin-bottom: 6rem;
     align-content: center;
@@ -227,7 +222,7 @@ a:visited {
     grid-row: span 2;
     overflow: hidden;
 }
-/* Links */
+/* Links About page*/
 .resume a:hover {
     color: var(--color-accent);
     padding: 0.5rem;
@@ -242,7 +237,7 @@ a:visited {
 .blog {
     border-bottom: 2px solid var(--color-secondary);
     margin-bottom: 8rem;
-    overflow: hidden; /* responsive doesn't work here? */
+    overflow: hidden;
 }
 .title {
     margin-left: 4rem;
@@ -276,7 +271,7 @@ a:visited {
     justify-content: center;
     text-align: center;
 }
-/* Links */
+/* Links  Contact page*/
 .contact a:hover {
     color: var(--color-accent);
     padding: 1.1rem;
